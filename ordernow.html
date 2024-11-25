@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now | The Coffee Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="faveicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+
+<main class="order-section">
+    <div class="order-title">
+        <h1>Order Your Favorite Coffee</h1>
+        <p>Freshly brewed and delivered to you!</p>
+    </div>
+    
+    <div class="order-form-container">
+        <form class="order-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="coffee">Select Coffee:</label>
+                <select id="coffee" name="coffee" required>
+                    <option value="">--Choose Coffee--</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="americano">Americano</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="macchiato">Macchiato</option>
+                    <option value="irish-coffee">Irish Coffee</option>
+                    <option value="flat-white">Flat White</option>
+                    <option value="cold-brew">Cold Brew</option>
+                    <option value="affogato">Affogato</option>
+                    <option value="breve">Breve</option>
+                    <option value="nitro">Nitro Coffee</option>
+                    <option value="dalgona">Dalgona Coffee</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label for="snacks">Add Snacks:</label>
+                <select id="snacks" name="snacks">
+                    <option value="">--Choose Snacks (Optional)--</option>
+                    <option value="croissant">Croissant</option>
+                    <option value="cookies">Cookies</option>
+                    <option value="muffin">Muffin</option>
+                    <option value="brownie">Brownie</option>
+                    <option value="scone">Scone</option>
+                    <option value="danish">Danish Pastry</option>
+                    <option value="bagel">Bagel</option>
+                    <option value="fruit-tart">Fruit Tart</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any special requests?"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Place Order</button>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>
+
